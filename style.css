@@ -116,9 +116,7 @@ section {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#peta #map {
-    background-color: #ddd;
-}
+
 
 /* Menambahkan styling untuk map-container */
 .map-container {
