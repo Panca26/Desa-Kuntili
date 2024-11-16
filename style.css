@@ -1,0 +1,263 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #3aafa9, #af3a40);
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Menempatkan elemen header kiri dan kanan */
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: color 0.3s ease, background 0.3s ease;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: white;
+    color: #61ad84;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 200px 20px;
+    background: url('image1.jpg') no-repeat center/cover;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background: #c49665;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+    background: #ffa200;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    background: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#peta #map {
+    background-color: #ddd;
+}
+
+/* Menambahkan styling untuk map-container */
+.map-container {
+    display: flex; /* Gunakan flexbox */
+    justify-content: center; /* Menyusun item di tengah secara horizontal */
+    margin: 0 auto; /* Untuk memastikan elemen ini tersusun dengan rapi */
+}
+
+.map-container iframe {
+    width: 90%; /* Atur lebar iframe sesuai keinginan */
+    height: 300px;
+}
+
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3aafa9;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+/* Mobile Styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+#sejarah p {
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 0;
+    padding: 0;
+    text-indent: 2em;
+}
+
+/* Section Sejarah */
+#sejarah {
+    padding: 50px 20px;
+    background: #dcf0f0;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Container untuk teks sejarah */
+.sejarah-container {
+    max-width: 800px; /* Maksimal lebar konten */
+    margin: 0 auto; /* Menjaga agar tetap terpusat */
+    line-height: 1.8; /* Spasi antar baris agar teks lebih nyaman dibaca */
+}
+
+/* Mengatur judul */
+#sejarah h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #3aafa9;
+}
+
+/* Styling untuk paragraf dalam sejarah */
+#sejarah p {
+    text-align: justify; /* Meratakan teks ke kiri dan kanan */
+    margin-bottom: 20px; /* Memberikan jarak antar paragraf */
+    font-size: 1.1rem; /* Ukuran font sedikit lebih besar */
+    color: #333; /* Warna teks yang nyaman untuk dibaca */
+    padding: 0 15px; /* Memberikan padding pada sisi kiri dan kanan */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    #sejarah p {
+        font-size: 1rem; /* Menyesuaikan ukuran font di perangkat kecil */
+        padding: 0 10px; /* Memberikan padding lebih sedikit */
+    }
+}
+
+.sejarah-container {
+    max-height: 400px;  /* Tentukan tinggi maksimum */
+    overflow-y: auto;   /* Tambahkan scroll vertikal */
+    padding-right: 15px; /* Agar teks tidak terlalu menempel dengan scroll */
+}
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row;  /* Jaga layout header tetap horizontal */
+        justify-content: space-between;  /* Judul di kiri, menu di kanan */
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #3aafa9;
+        border-radius: 8px;
+        display: none;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    nav ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    #nav-menu.active {
+        display: flex;
+    }
+}
